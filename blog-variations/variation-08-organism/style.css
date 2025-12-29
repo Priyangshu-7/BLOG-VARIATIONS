@@ -1,0 +1,130 @@
+:root {
+    --bg-color: #f4f7f2;
+    /* Soft sage mist */
+    --card-bg: #ffffff;
+    --text-primary: #3d4c3d;
+    /* Dark moss */
+    --text-body: #5c6b5c;
+    --accent: #8ba88b;
+    --font-head: 'Nunito', sans-serif;
+    --font-body: 'Lora', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Background Organic Shapes */
+.bg-shape-1,
+.bg-shape-2 {
+    position: absolute;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.bg-shape-1 {
+    width: 600px;
+    height: 600px;
+    background: #e0ece0;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    top: -100px;
+    left: -100px;
+}
+
+.bg-shape-2 {
+    width: 500px;
+    height: 500px;
+    background: #ebe0cf;
+    /* Warm sand */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Nav */
+.floating-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: var(--font-head);
+    font-weight: 700;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 99px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-item:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Main */
+.container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header h1 {
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-body);
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    border-radius: 32px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(61, 76, 61, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 300px;
+    background-color: #e5ede5;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    font-family: var(--font-head);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.content p {
+    color: var(--text-body);
+    margin-bottom: 1.5rem;
+}

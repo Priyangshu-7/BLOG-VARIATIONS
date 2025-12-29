@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stream - Chronological Log</title>
+    <link rel="stylesheet" href="../shared/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stream-container">
+        <header class="bio-header">
+            <img src="../shared/avatar.jpg" alt="Priyangshu" class="avatar">
+            <div>
+                <h1>Priyangshu's Log</h1>
+                <p>Work in public. Shipping everyday.</p>
+            </div>
+        </header>
+
+        <div class="timeline">
+            <!-- Entry 1 -->
+            <div class="entry">
+                <div class="timestamp">
+                    <span class="date">Oct 12</span>
+                    <span class="time">14:32</span>
+                </div>
+                <div class="marker"></div>
+                <div class="content">
+                    <p>Just shipped form validation for the new checkout flow. It uses <code>Zod</code> for schema
+                        definition. Feeling good about the type safety.</p>
+                </div>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="entry">
+                <div class="timestamp">
+                    <span class="date">Oct 11</span>
+                    <span class="time">09:15</span>
+                </div>
+                <div class="marker"></div>
+                <div class="content">
+                    <h3>Reflecting on Color Palettes</h3>
+                    <p>Spent the morning auditing our gray scale. We have too many neutral tones. Reducing from 12 to 5.
+                        Minimalism requires discipline.</p>
+                    <img src="images/palette.jpg" alt="Color Palette" class="image-preview"
+                        style="width: 100%; border-radius: 8px; margin-top: 10px; height: auto;">
+                </div>
+            </div>
+
+            <!-- Entry 3 -->
+            <div class="entry">
+                <div class="timestamp">
+                    <span class="date">Oct 10</span>
+                    <span class="time">18:45</span>
+                </div>
+                <div class="marker"></div>
+                <div class="content">
+                    <p>New article published: <a href="#">The Case for Server Components</a>. Check it out.</p>
+                </div>
+            </div>
+
+            <!-- Entry 4 -->
+            <div class="entry">
+                <div class="timestamp">
+                    <span class="date">Oct 09</span>
+                    <span class="time">11:00</span>
+                </div>
+                <div class="marker"></div>
+                <div class="content">
+                    <p>Coffee #3. The debugging continues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

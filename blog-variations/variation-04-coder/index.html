@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coder - Technical Design</title>
+    <link rel="stylesheet" href="../shared/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="line-numbers">
+            <!-- JS could populate this, but hardcoding for demo -->
+            <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+            <span>06</span><span>07</span><span>08</span><span>09</span><span>10</span>
+            <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+            <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+        </aside>
+
+        <main class="code-editor">
+            <header class="file-header">
+                <span class="comment">// Author: DevDesigner</span>
+                <span class="comment">// File: future-of-design.tsx</span>
+            </header>
+
+            <article>
+                <h1><span class="keyword">const</span> <span class="var">FutureOfDesign</span> = () => {</h1>
+
+                <div class="indent">
+                    <p class="comment">/*
+                        Design and engineering are converging.
+                        The wall between the two is an artifact of the past.
+                        */</p>
+
+                    <h2><span class="tag">&lt;Introduction&gt;</span></h2>
+                    <p>
+                        We used to hand off JPEGs. Then we handed off Figma links.
+                        Now, we push clean, component-backed code.
+                        The medium of the web is <span class="string">"code"</span>, not pixels.
+                    </p>
+                    <h2><span class="tag">&lt;/Introduction&gt;</span></h2>
+
+                    <br>
+
+                    <h2><span class="class">.paradigm-shift</span> {</h2>
+                    <ul class="prop-list">
+                        <li><span class="prop">collaboration:</span> <span class="val">real-time</span>;</li>
+                        <li><span class="prop">tooling:</span> <span class="val">integrated</span>;</li>
+                        <li><span class="prop">silos:</span> <span class="val">none</span>;</li>
+                    </ul>
+                    <h2>}</h2>
+
+                    <div class="terminal-block">
+                        <div class="term-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        </div>
+                        <div class="term-body">
+                            $ npm install design-engineering-hybrid<br>
+                            > Installing packages...<br>
+                            > <span class="success">Done in 1.4s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>} <span class="comment">// End Component</span></h1>
+            </article>
+
+            <div class="cursor"></div>
+        </main>
+    </div>
+</body>
+
+</html>

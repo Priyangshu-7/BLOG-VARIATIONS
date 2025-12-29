@@ -1,0 +1,143 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #202020;
+    --meta-color: #888;
+    --line-color: #e0e0e0;
+    --accent: #2563eb;
+    --font-ui: 'Work Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-ui);
+    line-height: 1.5;
+}
+
+.stream-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+/* Header */
+.bio-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.bio-header p {
+    color: var(--meta-color);
+    font-size: 0.9rem;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    /* Space for line can be adjusted */
+}
+
+/* The vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 85px;
+    /* Adjust based on timestamp width */
+    height: 100%;
+    width: 2px;
+    background: var(--line-color);
+    z-index: 0;
+}
+
+.entry {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timestamp {
+    width: 65px;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--meta-color);
+    padding-top: 4px;
+    /* Align with text */
+    flex-shrink: 0;
+}
+
+.timestamp .date {
+    display: block;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.marker {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    left: 80px;
+    /* Center on line (85px left + 1px center - 6px radius) */
+    top: 6px;
+    z-index: 1;
+}
+
+.content {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    flex-grow: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.content h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.content code {
+    background: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+}
+
+.content a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.content a:hover {
+    border-bottom-color: var(--accent);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grid - Design Curator</title>
+    <link rel="stylesheet" href="../shared/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1 class="logo">GRID<span>.system</span></h1>
+        <nav>
+            <a href="#" class="active">Discover</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Resources</a>
+            <a href="#">Podcast</a>
+        </nav>
+        <div class="newsletter-mini">
+            <p>Weekly insights.</p>
+            <input type="email" placeholder="Email...">
+        </div>
+    </div>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <h2>Latest Impressions</h2>
+            <div class="filter-pills">
+                <span class="pill active">All</span>
+                <span class="pill">UI Design</span>
+                <span class="pill">UX Research</span>
+                <span class="pill">Code</span>
+            </div>
+        </header>
+
+        <div class="bento-grid">
+            <!-- Featured Large -->
+            <article class="card card-large">
+                <div class="card-image"
+                    style="background-image: url('images/waiting.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <span class="category">Deep Dive</span>
+                    <h3>The Psychology of Waiting</h3>
+                    <p>Why skeletons screens are better than spinners, and how perceived performance affects retention.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Medium Vertical -->
+            <article class="card card-tall">
+                <div class="card-image"
+                    style="background-image: url('images/microinteractions.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <span class="category">Trend</span>
+                    <h3>Micro-interactions 2025</h3>
+                    <p>Subtle joy is the new delight.</p>
+                </div>
+            </article>
+
+            <!-- Standard -->
+            <article class="card">
+                <div class="card-content">
+                    <span class="category">Tooling</span>
+                    <h3>Figma Variables</h3>
+                    <p>Mastering tokens for design systems.</p>
+                </div>
+            </article>
+
+            <!-- Standard -->
+            <article class="card">
+                <div class="card-content">
+                    <span class="category">Career</span>
+                    <h3>The Senior Gap</h3>
+                    <p>Navigating the plateau.</p>
+                </div>
+            </article>
+
+            <!-- Standard -->
+            <article class="card" style="background-color: #000; color: white;">
+                <div class="card-content">
+                    <span class="category" style="color: #fdcb6e;">Op-Ed</span>
+                    <h3>AI is a tool, not a replacement.</h3>
+                </div>
+            </article>
+
+            <!-- Wide -->
+            <article class="card card-wide">
+                <div class="card-content">
+                    <span class="category">Case Study</span>
+                    <h3>Redesigning the Fintech Dashboard</h3>
+                    <p>How we increased clarity and reduced cognitive load for 5M users.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

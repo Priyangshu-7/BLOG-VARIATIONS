@@ -1,0 +1,191 @@
+:root {
+    --bg-color: #1e1e1e;
+    --line-num-bg: #252526;
+    --text-color: #d4d4d4;
+    --comment: #6a9955;
+    --keyword: #569cd6;
+    --string: #ce9178;
+    --tag: #4ec9b0;
+    --prop: #9cdcfe;
+    --val: #b5cea8;
+    --class: #d7ba7d;
+    --var: #4fc1ff;
+    --font-code: 'Fira Code', monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-code);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.line-numbers {
+    background: var(--line-num-bg);
+    color: #858585;
+    text-align: right;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* Let line-height handle it or match text exactly */
+    user-select: none;
+    font-size: 16px;
+    line-height: 1.6;
+    /* Must match body line-height exactly depending on how content flows */
+    /* Note: In a real implementation, JS syncs line numbers. Here we just show the aesthetic column. */
+    width: 60px;
+    border-right: 1px solid #333;
+}
+
+.line-numbers span {
+    display: block;
+    height: 1.6em;
+    /* Hacking safe alignment for demo */
+}
+
+/* Code Editor Area */
+.code-editor {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+}
+
+.file-header {
+    margin-bottom: 2rem;
+    color: var(--comment);
+}
+
+.comment {
+    color: var(--comment);
+    display: block;
+    font-style: italic;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.indent {
+    margin-left: 2rem;
+    border-left: 1px solid #333;
+    padding-left: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    max-width: 700px;
+}
+
+/* Syntax Colors */
+.keyword {
+    color: var(--keyword);
+}
+
+.string {
+    color: var(--string);
+}
+
+.tag {
+    color: var(--tag);
+}
+
+.prop {
+    color: var(--prop);
+}
+
+.val {
+    color: var(--val);
+}
+
+.class {
+    color: var(--class);
+}
+
+.var {
+    color: var(--var);
+}
+
+/* Prop list styling */
+.prop-list {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Terminal Component inside the blog */
+.terminal-block {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 500px;
+    font-size: 0.9rem;
+}
+
+.term-header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.success {
+    color: var(--val);
+}
+
+/* Blinking Cursor */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background: var(--text-color);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
